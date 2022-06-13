@@ -17,7 +17,7 @@ std::vector<std::vector<T>> Handler::DoWork(const std::vector<T> &vc, const std:
   return result;
 }
 
-template<typename T>
+template<class T>
 std::vector<std::vector<T>> Handler::DoWork(std::vector<std::pair<T, T>> &vc,
                                             std::vector<std::function<T(T, T)>> funcVector) {
   std::vector<std::vector<T>> result;

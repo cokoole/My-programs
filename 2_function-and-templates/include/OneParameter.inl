@@ -1,11 +1,11 @@
 #pragma once
 
-template <typename T>
+template <class T>
 T squaring (T a) {
   return a * a;
 }
 
-template <typename T>
+template <class T>
 T sum(T a) {
   return a + a;
 }

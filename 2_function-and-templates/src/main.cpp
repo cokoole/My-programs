@@ -9,9 +9,12 @@
 int main() {
   std::vector<int> vc = {1, 2, 3};
 
-  std::vector<std::function<int(int )>> funcVector = {
-      sum<int>,
-      squaring<int>
+  int(*f)(int);
+
+  f = sum;
+
+  std::vector<std::function<int(int)>> funcVector = {
+      f
   };
 
   auto res = Handler::DoWork(vc, funcVector);
